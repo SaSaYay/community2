@@ -22,7 +22,7 @@ public class LoggerTest {
     @Test
     public void testLogger(){
         System.out.println(LOGGER.getName());
-
+//1
         LOGGER.debug("debug log");
         LOGGER.info("info");
         LOGGER.warn(" warn");
