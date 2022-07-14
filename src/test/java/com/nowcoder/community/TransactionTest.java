@@ -1,6 +1,6 @@
 package com.nowcoder.community;
 
-import com.nowcoder.community.util.SensitiveFilter;
+import com.nowcoder.community.service.AlphaService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,19 +10,19 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 /**
  * @author sasayaya
- * @create 2022/7/11 0:05
+ * @create 2022/7/12 21:40
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @ContextConfiguration(classes = CommunityApplication.class)
-public class SensitiveTest {
+public class TransactionTest {
     @Autowired
-    private SensitiveFilter sensitiveFilter;
+    private AlphaService alphaService;
 
     @Test
-    public void testSensitiveFilter(){
-        String text = "这里面可以开票，可以赌博，可以嫖娼";
-        text = sensitiveFilter.filter(text);
-        System.out.println(text);
+    public void testSave1(){
+//        Object o = alphaService.save1();
+        Object o = alphaService.save2();
+        System.out.println(o);
     }
 }

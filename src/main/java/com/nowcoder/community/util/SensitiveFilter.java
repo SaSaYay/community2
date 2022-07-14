@@ -92,8 +92,9 @@ public class SensitiveFilter {
             tempNode = tempNode.getSubNode(c);
             if (tempNode == null){
                 sb.append(text.charAt(begin));
-                position =begin;
                 begin++;
+                position =begin;
+
 //                指针重新指向根节点
                 tempNode =rootNode;
             }else if (tempNode.isKeywordEnd()){
