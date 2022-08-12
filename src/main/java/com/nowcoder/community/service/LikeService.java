@@ -34,7 +34,6 @@ public class LikeService {
                     operations.opsForValue().increment(userLikeKey);
                 }
 
-
                 return operations.exec();
             }
         });
