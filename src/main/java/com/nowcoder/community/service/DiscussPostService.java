@@ -50,6 +50,7 @@ public class DiscussPostService {
 
     @PostConstruct
     public void init() {
+        LOGGER.debug("创建了caffeine");
         // 初始化帖子列表缓存
         postListCache = Caffeine.newBuilder()
                 .maximumSize(maxSize)
