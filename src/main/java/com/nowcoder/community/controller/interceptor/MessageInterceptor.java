@@ -1,7 +1,7 @@
 package com.nowcoder.community.controller.interceptor;
 
-import com.nowcoder.community.entity.User;
 import com.nowcoder.community.service.MessageService;
+import com.nowcoder.community.entity.User;
 import com.nowcoder.community.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

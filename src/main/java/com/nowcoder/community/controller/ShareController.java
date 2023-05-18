@@ -2,8 +2,8 @@ package com.nowcoder.community.controller;
 
 import com.nowcoder.community.entity.Event;
 import com.nowcoder.community.event.EventProducer;
-import com.nowcoder.community.util.CommunityConstant;
 import com.nowcoder.community.util.CommunityUtil;
+import com.nowcoder.community.util.CommunityConstant;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

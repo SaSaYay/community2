@@ -37,11 +37,11 @@ public class ElasticsearchService {
     @Autowired
     private ElasticsearchTemplate elasticTemplate;
 
-//    向es提供新产生的帖子
+//      向es提供新产生的帖子
     public void saveDiscussPost(DiscussPost discussPost){
         discussRepository.save(discussPost);
     }
-
+//      删除
     public void deleteDiscussPost(int id){
         discussRepository.deleteById(id);
     }

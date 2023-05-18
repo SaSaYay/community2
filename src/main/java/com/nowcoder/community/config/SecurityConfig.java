@@ -1,7 +1,7 @@
 package com.nowcoder.community.config;
 
-import com.nowcoder.community.util.CommunityConstant;
 import com.nowcoder.community.util.CommunityUtil;
+import com.nowcoder.community.util.CommunityConstant;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -30,7 +30,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-//        授权
+        //        授权
+        //      权限不够时的处理
+
         http.authorizeRequests()
                 .antMatchers(
                         "/user/setting",

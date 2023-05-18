@@ -24,8 +24,6 @@ import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Map;
@@ -63,7 +61,7 @@ public class LoginController implements CommunityConstant {
     }
 
     @RequestMapping(path = "/register",method = RequestMethod.POST)
-    public String register(Model model, User  user) throws IllegalAccessException {
+    public String register(Model model, User user) throws IllegalAccessException {
         Map<String, Object> map = userService.register(user);
         if (map==null||map.isEmpty()){
             model.addAttribute("msg",

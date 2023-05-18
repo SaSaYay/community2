@@ -1,12 +1,12 @@
 package com.nowcoder.community.service;
 
-import com.google.code.kaptcha.Producer;
-import com.nowcoder.community.controller.UserController;
-import com.nowcoder.community.dao.LoginTicketMapper;
-import com.nowcoder.community.dao.UserMapper;
 import com.nowcoder.community.entity.LoginTicket;
+import com.nowcoder.community.util.CommunityConstant;
+import com.nowcoder.community.util.CommunityUtil;
+import com.nowcoder.community.util.MailClient;
+import com.nowcoder.community.dao.UserMapper;
 import com.nowcoder.community.entity.User;
-import com.nowcoder.community.util.*;
+import com.nowcoder.community.util.RedisKeyUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

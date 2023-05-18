@@ -1,12 +1,12 @@
 package com.nowcoder.community.controller;
 
 import com.nowcoder.community.entity.Event;
-import com.nowcoder.community.entity.User;
 import com.nowcoder.community.event.EventProducer;
-import com.nowcoder.community.service.LikeService;
-import com.nowcoder.community.util.CommunityConstant;
 import com.nowcoder.community.util.CommunityUtil;
 import com.nowcoder.community.util.HostHolder;
+import com.nowcoder.community.entity.User;
+import com.nowcoder.community.service.LikeService;
+import com.nowcoder.community.util.CommunityConstant;
 import com.nowcoder.community.util.RedisKeyUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;

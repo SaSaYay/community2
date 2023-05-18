@@ -33,7 +33,6 @@ public class LikeService {
                     operations.opsForSet().add(entityLikeKey,userId);
                     operations.opsForValue().increment(userLikeKey);
                 }
-
                 return operations.exec();
             }
         });
